@@ -1,0 +1,90 @@
+﻿@model EviromentalSurvey.Models.Content
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Content</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Event.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Event.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Reward.RewardName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Reward.RewardName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CreateContentEventBy)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CreateContentEventBy)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Sections)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Sections)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Detail)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Detail)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EventId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EventId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.RewardId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.RewardId)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

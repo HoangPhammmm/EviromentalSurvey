@@ -1,0 +1,66 @@
+﻿@model EviromentalSurvey.Models.Reward
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Reward</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Content.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Content.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Point)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Point)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.RewardName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.RewardName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.RewardContent)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.RewardContent)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ContentId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ContentId)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
